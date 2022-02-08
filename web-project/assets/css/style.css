@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  .container{
+    width:70vw;
+    max-width: 900px;
+    margin:40px auto;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+body{
+    background-color:rebeccapurple;
+    font-family: "Poppins", sans-serif;
+}
+
+.primary a{
+    color: antiquewhite;
+}
+
+#content.container{
+    color:antiquewhite;
+}
