@@ -7,7 +7,10 @@ html {
   *:after {
     box-sizing: inherit;
   }
-
+header.primary{
+    background-color:beige;
+    margin: 20px;
+}
   .container{
     width:70vw;
     max-width: 900px;
@@ -20,7 +23,7 @@ img{
 }
 
 body{
-    background-color:rebeccapurple;
+    background-color:plum;
     font-family: "Poppins", sans-serif;
 }
 
