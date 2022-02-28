@@ -8,11 +8,14 @@ html {
   box-sizing: inherit;
 }
 /*------nav----*/
+nav{
+  display: inline-grid;
+}
 nav ul{
 list-style-type: none;
 margin:0;
 padding: 0;
-overflow: hideen;
+overflow: hiden;
 background-color:#9FE2BF;
 
 }
@@ -21,7 +24,6 @@ float: left;
 
 }
 nav li a {
-display:inline;
 color:white;
 text-align:center;
 padding:14px 16px;
@@ -49,7 +51,13 @@ header.primary{
   padding: 30px;
   border-width: 10px;
 }
-
+.wrapper{
+  width:70vw;
+  max-width: 900px;
+  margin:40px auto;
+  padding: 30px;
+  border-width: 10px;
+}
 img{
   max-width:100%;
   height:auto;
