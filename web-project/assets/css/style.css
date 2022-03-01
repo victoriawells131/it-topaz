@@ -8,6 +8,11 @@ html {
   box-sizing: inherit;
 }
 /*------nav----*/
+header.primary h1{
+  color:white;
+  font-size: 40px;
+  text-shadow: 2px 2px 5px gray;
+}
 header.primary nav{
   float:left;
   background-color: #235761;
