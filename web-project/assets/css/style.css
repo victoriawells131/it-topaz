@@ -8,31 +8,47 @@ html {
   box-sizing: inherit;
 }
 /*------nav----*/
-nav{
-  display: inline-grid;
+header.primary nav{
+  float:left;
+  background-color: #235761;
+  overflow:hidden;
+  border: 12px solid black;
 }
-nav ul{
-list-style-type: none;
-margin:0;
-padding: 0;
-overflow: hiden;
-background-color:#9FE2BF;
-
+header.primary nav li{
+  float:left;
 }
-nav li{
-float: left;
-
+header.primary nav a {
+  float:left;
+  color:#9FE2BF;
+  text-align:center;
+  padding: 14px 16px;
+  text-decoration:none;
+  font-size: 17px;
 }
-nav li a {
-color:white;
-text-align:center;
-padding:14px 16px;
-text-decoration: none;
-
+header.primary nav a:hover {
+  background-color: #008080;
+  color:black;
 }
-nav li a:hover {
-background-color:#008080 ;
+header.primary nav a:active{
+  background-color:white;
+  color:black;
 }
+header.primary nav ul{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  padding:0;
+}
+header.primary nav ul li {
+  list-style-type:none;
+}
+header.primary nav li{
+  margin-bottom:0px;
+  }
+  
+  header.primary a{
+    display:block;
+  }
 /*---nav---*/
 
 /*---header---*/
@@ -41,6 +57,7 @@ header.primary{
   background-color:#235761;
   padding: 20px 50px;
   text-align:center;
+  border:12px solid black;
 }
 /*---body---*/
 
@@ -50,6 +67,7 @@ header.primary{
   margin:40px auto;
   padding: 30px;
   border-width: 10px;
+  border:12px solid black;
 }
 .wrapper{
   width:70vw;
@@ -73,14 +91,50 @@ article.post{
   padding:.4rem;
   font-size: .7rem;
 }
+article.post:hover{
+  box-shadow:0 8px 16 px rgba(0, 0, 0, .4);
+}
 article{
   float: left;
   width: 100px;
 
 }
+article a:link{
+  color:rgba(0,0,0,.4)
+}
+article a:hover, article a:active{
+  text-decoration:none;
+}
+aside[role="complementary"]{
+  background-color:royalblue
+  color:#fff;
+  padding:1.8ren;
+}
 .container{
   background-color:whitesmoke;
 }
 #content h2{
+  text-align: center;
+}
+.item1{grid-area:content;}
+.grid-container {
+  display:grid;
+  grid-template-areas:
+  'content content';
+}
+#examples.wrapper{
+  background-color:whitesmoke;
+  display:block;
+  border:12px solid black;
+}
+#articles{
+  
+  display:flex;
+  justify-content: space-between;
+}
+#wufoo-z1rxta7c1sad4dq{
+  background-color:whitesmoke;
+  display:block;
+  border:12px solid black;
   text-align: center;
 }
