@@ -10,11 +10,13 @@ html {
 /*------nav----*/
 header.primary h1{
   color:white;
-  font-size: 40px;
+  font-size: 60px;
   text-shadow: 2px 2px 5px gray;
 }
+
+}
 header.primary nav{
-  float:left;
+  
   background-color: #235761;
   overflow:hidden;
   border: 12px solid black;
@@ -142,4 +144,19 @@ aside[role="complementary"]{
   display:block;
   border:12px solid black;
   text-align: center;
+}
+
+img{
+  float:right;
+ width:auto;
+ max-height:100%;
+ margin:1%;
+ border:5px solid black;
+}
+.img1{
+  height: 200px;
+  
+}
+dt{
+  text-decoration: underline  ;
 }
