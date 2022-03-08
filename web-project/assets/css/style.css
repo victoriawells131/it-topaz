@@ -14,12 +14,11 @@ header.primary h1{
   text-shadow: 2px 2px 5px gray;
 }
 
-}
 header.primary nav{
   
   background-color: #235761;
   overflow:hidden;
-  border: 12px solid black;
+  
 }
 header.primary nav li{
   float:left;
@@ -114,8 +113,7 @@ article a:hover, article a:active{
 }
 aside[role="complementary"]{
   background-color:royalblue
-  color:#fff;
-  padding:1.8ren;
+  padding:1.8rem;
 }
 .container{
   background-color:whitesmoke;
