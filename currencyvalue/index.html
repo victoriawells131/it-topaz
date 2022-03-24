@@ -1,0 +1,54 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="JavaScript Calculator">
+    <meta name="keywords" content="JavaScript, HTML, CSS">
+    <meta name="author" content="Victoria Wells">
+    <title>Currency Value History</title>
+</head>
+    <body>
+        <form id="myform">
+            <div class="formcontainer" onsubmit="return false">
+                <h1>Currency Value History</h1>
+                <label class="formlabel" for="BaseCurrency">Base Currency: </label>
+
+                <select id="bc" name="basecurrency"
+                data-rule-required="true" data-msg-required="Base Currency is Required">
+                    <option value="usd">USD</option>
+                    <option value="cad">CAD</option>
+                    <option value="eur">EUR</option>
+                    <option value="kwd">KWD</option>
+                    <option value="gbp">GBP</option>
+                    
+                    </option>
+                
+                </select>
+                <br>
+                <label class="formlabel" for="Convert">Convert to Currency: </label>
+                <select id="convert" name="convert"
+                data-rule-required="true" data-msg-required="Convert to Currency is Required">
+                    <option value="usd">USD</option>
+                    <option value="cad">CAD</option>
+                    <option value="eur">EUR</option>
+                    <option value="kwd">KWD</option>
+                    <option value="gbp">GBP</option>
+                    </option>
+                </select>
+                <br>
+                <label class="formlabel">From Date:</label>
+            <input type="date" name="FromDate" id="FromDate" 
+                data-rule-required="true" data-msg-required="From Date is Required">
+            <label id="FromDateError" for="FromDate" class="error"></label>
+            <br>
+            <label class="formlabel">To Date:</label>
+            <input type="date" name="ToDate" id="ToDate" 
+			     data-rule-required="true" data-msg-required="To Date is Required">
+		    <label id="ToDateError" for="ToDate" class="error"></label>
+            <br><br>
+            
+            <input type="button" value="ShowResults" name="ShowResults" onclick="calculate();">
+            <input type="button" value="Clear" name="Clear" onclick="clearform();" novalidate>
+            </div>
+            </form>
+            </body>
+            </html>
