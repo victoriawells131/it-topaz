@@ -1,0 +1,77 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="JavaScript Calculator">
+    <meta name="keywords" content="JavaScript, HTML, CSS">
+    <meta name="author" content="Victoria Wells">
+    <title>Mars Rover Photo Explorer</title>
+</head>
+
+<body>
+    <form id="myform">
+        <div class="formcontainer">
+            <h1>Mars Rover Photo Explorer</h1>
+            <table>
+                <tbody><tr><th scope="col">Rover</th><th scope="col">Mission Start</th><th scope="col">Mission End</th>
+                </tr><tr><td>Curiosity</td><td>08/06/2012</td><td>09/28/2019</td>
+                </tr><tr><td>Opportunity</td><td>01/26/2004</td><td>06/11/2018</td>
+                </tr><tr><td>Spirit</td><td>01/05/2004</td><td>03/21/2004</td>
+                </tr>
+            </tbody>
+            </table>
+            <h2>Select a rover and a picture date:</h2>
+            <label class="formlabel">Rover:</label>
+            <label for="Curiosity">
+                <input type="radio" onchange="getCuriosity()" name="Rover" id="Curiosity"
+                value="Curiosity" data-rule-required="true" data-msg-required="A Rover is required">Curiosity
+                </label>
+                <label for="Opportunity">
+                    <input type="radio" onchange="getOpportunity()" name="Rover" id="Opportunity"
+                    value="Opportunity" data-rule-required="true" data-msg-required="A Rover is required">Opportunity
+                    </label>
+                    <label for="Spirit">
+                        <input type="radio" onchange="Spirit()" name="Rover" id="Spirit"
+                        value="Spirit" data-rule-required="true" data-msg-required="A Rover is required">Spirit
+                        </label>
+<label for="Rover" class="error" id="RoverError"></label>
+<br><br>
+<label class="formlabel" value="Search" name="Search" onclick="findrover();">
+    <input type="date" id="PictureDate" name="PictureDate" data-rule-required="true" data-msg-required="Date is Required">
+    <label class="error" for="PictureDate" id="PictureDateError"></label>
+    <br><br>
+    <input type="button" value="Search" name="Search" onclick="findrover();">
+    <input type="button" value="Clear" name="Clear" onclick="clearform();" novalidate="">
+    <p id="text1"></p>
+    <p id="text2"></p>
+    <div>
+        <a id="anchor0" href="#" target="_blank"><img id="image0" src="#" height="100" width="100" ></a>
+        <a id="anchor1" href="#" target="_blank"><img id="image1" src="#" height="100" width="100" ></a>
+        <a id="anchor2" href="#" target="_blank"><img id="image2" src="#" height="100" width="100" ></a>
+        <a id="anchor3" href="#" target="_blank"><img id="image3" src="#" height="100" width="100" ></a>
+        <a id="anchor4" href="#" target="_blank"><img id="image4" src="#" height="100" width="100" ></a>
+        <a id="anchor5" href="#" target="_blank"><img id="image5" src="#" height="100" width="100" ></a>
+        <a id="anchor6" href="#" target="_blank"><img id="image6" src="#" height="100" width="100" ></a>
+        <a id="anchor7" href="#" target="_blank"><img id="image7" src="#" height="100" width="100" ></a>
+        <a id="anchor8" href="#" target="_blank"><img id="image8" src="#" height="100" width="100" ></a>
+        <a id="anchor9" href="#" target="_blank"><img id="image9" src="#" height="100" width="100" ></a>
+        <a id="anchor10" href="#" target="_blank"><img id="image10" src="#" height="100" width="100" ></a>
+        <a id="anchor11" href="#" target="_blank"><img id="image11" src="#" height="100" width="100" ></a>
+        <a id="anchor12" href="#" target="_blank"><img id="image12" src="#" height="100" width="100" ></a>
+        <a id="anchor13" href="#" target="_blank"><img id="image13" src="#" height="100" width="100" ></a>
+        <a id="anchor14" href="#" target="_blank"><img id="image14" src="#" height="100" width="100" ></a>
+        <a id="anchor15" href="#" target="_blank"><img id="image15" src="#" height="100" width="100" ></a>
+        <a id="anchor16" href="#" target="_blank"><img id="image16" src="#" height="100" width="100" ></a>
+        <a id="anchor17" href="#" target="_blank"><img id="image17" src="#" height="100" width="100" ></a>
+        <a id="anchor18" href="#" target="_blank"><img id="image18" src="#" height="100" width="100" ></a>
+        <a id="anchor19" href="#" target="_blank"><img id="image19" src="#" height="100" width="100" ></a>
+        <a id="anchor20" href="#" target="_blank"><img id="image20" src="#" height="100" width="100" ></a>
+        <a id="anchor21" href="#" target="_blank"><img id="image21" src="#" height="100" width="100" ></a>
+        <a id="anchor22" href="#" target="_blank"><img id="image22" src="#" height="100" width="100" ></a>
+        <a id="anchor23" href="#" target="_blank"><img id="image23" src="#" height="100" width="100" ></a>
+        <a id="anchor24" href="#" target="_blank"><img id="image24" src="#" height="100" width="100" ></a>
+        </div>
+        </div>
+        </div>
+    </form>
+</body>
+</html>
